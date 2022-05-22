@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.Madrasty" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_blue </item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_blue_two</item>
+        <item name="colorSecondaryVariant">@color/green_blue_two</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
+        <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button.Default</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTransparentTheme</item>
+
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.Default" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="bold" parent="Theme.Madrasty">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="regular" parent="Theme.Madrasty">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="medium" parent="Theme.Madrasty">
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTransparentTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetModelTransparentStyle</item>
+    </style>
+
+    <style name="bottomSheetModelTransparentStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_rounded_top_16</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+</resources>

@@ -1,0 +1,146 @@
+ext.deps = [
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        // BUILD                                                                                  //
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+        'build'              : [
+                'gradle'        : "com.android.tools.build:gradle:4.2.0",
+                'kotlin'        : "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30-RC",
+                'googleServices': "com.google.gms:google-services:4.3.5",
+                'navSafeArgs'   : "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0",
+        ],
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        // MAIN                                                                                   //
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+        'kotlin'             : [
+                'lib'    : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.30-RC",
+                'reflect': "org.jetbrains.kotlin:kotlin-reflect:1.4.30-RC"
+        ],
+        'support'            : [
+                'core_ktx'      : "androidx.core:core-ktx:1.3.1",
+                'appcompat'     : "androidx.appcompat:appcompat:1.1.0",
+                'constraint'    : "androidx.constraintlayout:constraintlayout:2.0.0-beta8",
+                'recyclerView'  : "androidx.recyclerview:recyclerview:1.1.0",
+                'materialDesign': "com.google.android.material:material:1.3.0-alpha02",
+                'multidex'      : "androidx.multidex:multidex:2.0.1",
+                'testRules'     : "androidx.test:rules:1.1.0",
+                'fragment'      : "androidx.fragment:fragment-ktx:1.3.0-alpha04",
+                'activity'      : "androidx.activity:activity:1.2.0-alpha04",
+                'legacy'        : "androidx.legacy:legacy-support-v4:1.0.0",
+        ],
+        'navigation'         : [
+                'navigationFragment': "androidx.navigation:navigation-fragment-ktx:2.3.5",
+                'navigationUi'      : "androidx.navigation:navigation-ui-ktx:2.3.5",
+                'testing'           : "androidx.navigation:navigation-testing:1.5.10",
+        ],
+        'playServices'       : [
+                'playCore': "com.google.android.play:core:1.7.3",
+                'location': "com.google.android.gms:play-services-location:17.0.0",
+                'maps'    : "com.google.android.gms:play-services-maps:17.0.0",
+                'auth'    : "com.google.android.gms:play-services-auth:18.0.0",
+                'iap'     : "com.android.billingclient:billing-ktx:3.0.0"
+        ],
+        'dagger'             : [
+                'dagger'   : "com.google.dagger:dagger:2.31.2",
+                'compiler' : "com.google.dagger:dagger-compiler:2.31.2",
+                'android'  : "com.google.dagger:dagger-android:2.31.2",
+                'processor': "com.google.dagger:dagger-android-processor:2.31.2",
+                'support'  : "com.google.dagger:dagger-android-support:2.31.2",
+        ],
+        'retrofit'           : [
+                'retrofit': "com.squareup.retrofit2:retrofit:2.9.0",
+                'adapters': "com.squareup.retrofit2:adapter-rxjava2:2.9.0",
+                'gson'    : "com.squareup.retrofit2:converter-gson:2.9.0",
+        ],
+        'okHttp'             : [
+                'okHttp'       : "com.squareup.okhttp3:okhttp:4.9.0",
+                'logging'      : "com.squareup.okhttp3:logging-interceptor:4.9.0",
+                'mockwebserver': "com.squareup.okhttp3:mockwebserver:4.9.0",
+                'prettyLogger' : "com.github.ihsanbal:LoggingInterceptor:3.1.0",
+        ],
+        'rxNetwork'          : "com.github.pwittchen:reactivenetwork-rx2:3.0.6",
+        'codec'              : "commons-codec:commons-codec:1.8",
+        'rx'                 : [
+                'android': "io.reactivex.rxjava2:rxandroid:2.0.2",
+                'kotlin' : "io.reactivex.rxjava2:rxkotlin:2.2.0",
+                'java'   : "io.reactivex.rxjava2:rxjava:2.2.2",
+        ],
+        'lifecycle'          : [
+                'viewModel': "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1",
+                'liveData' : "androidx.lifecycle:lifecycle-livedata:2.2.0",
+                'compiler' : "androidx.lifecycle:lifecycle-common-java8:2.2.0",
+                'streams'  : "androidx.lifecycle:lifecycle-reactivestreams:2.2.0",
+                'process'  : "androidx.lifecycle:lifecycle-process:2.2.0",
+                'testing'  : "androidx.arch.core:core-testing:2.1.0",
+        ],
+        'glide'              : [
+                'glide'       : "com.github.bumptech.glide:glide:4.11.0",
+                'compiler'    : "com.github.bumptech.glide:compiler:4.11.0",
+                'glide_okhttp': "com.github.bumptech.glide:okhttp3-integration:4.11.0"
+        ],
+        'google_gson'        : "com.google.code.gson:gson:2.8.6",
+        'circleImage'        : "de.hdodenhof:circleimageview:2.2.0",
+        'roundedImageview'   : "com.makeramen:roundedimageview:2.3.0",
+        'rxbinding2'         : "com.jakewharton.rxbinding2:rxbinding-kotlin:2.0.0",
+        'discreateScrollView': "com.yarolegovich:discrete-scrollview:1.5.1",
+
+        'security'           : [
+                'securityCrypto': "androidx.security:security-crypto:1.1.0-alpha03",
+        ],
+
+        'shapeofview'        : "io.github.florent37:shapeofview:1.4.7",
+        'ImageSlideshow'     : "com.github.denzcoskun:ImageSlideshow:0.1.0",
+
+        'exoplayer'          : [
+                'exoplayer': 'com.google.android.exoplayer:exoplayer:2.14.2',
+                'hls'      : 'com.google.android.exoplayer:exoplayer-hls:2.14.2',
+                'core'     : 'com.google.android.exoplayer:exoplayer-core:2.14.2',
+                'ui'       : 'com.google.android.exoplayer:exoplayer-ui:2.14.2',
+        ],
+        'progressview'      : "com.github.skydoves:progressview:1.1.1",
+        'shapeofview'      : "io.github.florent37:shapeofview:1.4.7",
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        // TOOLS                                                                                  //
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+        'rxPermissions'      : "com.github.tbruyelle:rxpermissions:0.10.2",
+
+
+        'pull_refresh'       : "com.github.aliumujib:SwipeToRefresh:1.01",
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        // DEBUG                                                                                  //
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+        'timber'             : "com.jakewharton.timber:timber:4.7.1",
+        'toast'              : "com.github.GrenderG:Toasty:1.5.0",
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        // TESTING                                                                                //
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+        'jUnit'              : "junit:junit:4.12",
+        'truth'              : "com.google.truth:truth:0.40",
+        'runner'             : "androidx.test:runner:1.1.0",
+        'JUnitRunner'        : "androidx.test.runner.AndroidJUnitRunner",
+        'espresso'           : [
+                'core'   : "androidx.test.espresso:espresso-core:3.1.0",
+                'intents': "androidx.test.espresso:espresso-intents:3.1.0",
+                'contrib': "androidx.test.espresso:espresso-contrib:3.1.0",
+        ],
+        'mockito'            : [
+                'core'   : "org.mockito:mockito-core:2.22.0",
+                'inline' : "org.mockito:mockito-inline:2.22.0",
+                'android': "org.mockito:mockito-android:2.22.0",
+                'kotlin' : "com.nhaarman:mockito-kotlin:1.6.0",
+        ],
+
+
+        'androidxTest'       : "androidx.test:core:1.1.0",
+        'androidxJunit'      : "androidx.test.ext:junit:1.1.0",
+        'androidxFTest'      : "androidx.fragment:fragment-testing:fragment",
+        'mockwebserver'      : "com.squareup.okhttp3:mockwebserver:4.3.1"
+
+]

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مدرستي</string>
+    <string name="welcome">مرحباً</string>
+    <string name="img_desc">image</string>
+    <!--    login-->
+    <string name="sign_in_to_continue">تسجيل الدخول للمتابعة</string>
+    <string name="email">"البريد الالكتروني "</string>
+    <string name="forgot_your_password">نسيت رقمك السري؟</string>
+    <string name="password">"البريد الالكتروني "</string>
+    <string name="get_started">الدخول</string>
+    <string name="take_a_tour">"take a tour "</string>
+    <string name="press_to_login_with">"اختر لتسجيل الدخول "</string>
+    <string name="sign_in">"تسسجيل الدخول "</string>
+    <string name="sign_up">تسجيل جديد</string>
+    <string name="join">"انضم "</string>
+    <!--    forgot password-->
+    <string name="forgot_your_password_txt">نسيت رقمك السري؟</string>
+    <string name="enter_mobile_number_msg">أدخل عنوان البريد الإلكتروني لتلقي رمز التحقق الخاص بك</string>
+    <string name="mobile_number_txt">رقم الهاتف المحمول</string>
+    <string name="reset_password_txt">تغير كلمة المرور</string>
+    <string name="empty_mobile_number">من فضلك ادخل رقم الهاتف </string>
+    <string name="invalid_email">"من فضلك ادخل بريد الكتروني صحيح "</string>
+    <string name="required">"مطلوب "</string>
+    <string name="invalid_password">يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل</string>
+    <string name="verification_code_txt">شيفرة التأكيد</string>
+    <string name="email_not_found">البريد الإلكتروني غير موجود</string>
+    <string name="code_txt">شفرة</string>
+    <string name="verify_txt">تحقق</string>
+    <string name="resend_code_txt">أعد إرسال الرمز</string>
+    <string name="empty_verification_code">الرجاء إدخال رقم رمز التحقق</string>
+    <string name="confirm_txt">تاكيد</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="retype_new_password">أعد كتابة كلمة السر الجديدة</string>
+    <string name="empty_password">الرجاء إدخال كلمة المرور</string>
+    <string name="seconds">ثواني</string>
+    <string name="resend_in">اعداده ارسال في </string>
+    <string name="success_txt">Success</string>
+    <string name="ok"> حسنا </string>
+    <string name="server_error">"حدث خطا حاول في وقت لاحق "</string>
+    <string name="connection_error">"خطاء في الاتصال "</string>
+    <string name="register_as_student">"التسجيل كطالب "</string>
+    <string name="register_as_instructor">"التسجيل كمعلم "</string>
+    <string name="user_name">"اسم المستخدم "</string>
+    <string name="grade">الدرجه</string>
+    <string name="first_name">"الاسم الاول "</string>
+    <string name="last_name">"الاسم الاخير "</string>
+    <string name="phone_number">"رقم الهاتف "</string>
+    <string name="repeat_password">"اعاده كلمه المرور "</string>
+    <string name="accept_terms_and_condetions">"من فضلك اقبل الشوط والسياسات "</string>
+    <string name="terms_and_condetions"><![CDATA[ I have read and agree to the <a href="id.web.freelancer.example.TCActivity://Kode\">TERMS AND CONDITIONS</a> and <a href="id.web.freelancer.example.TCActivity://Kode">Privacy Policy</a>]]></string>
+    <string name="quiz">اختبر نفسك</string>
+    <string name="live_session">حصص لايف</string>
+    <string name="my_learning">الكورسات</string>
+    <string name="music">ألأغاني</string>
+    <string name="new_music">موسيقي جديده</string>
+    <string name="mr">استاذ</string>
+    <string name="shuffle_play">تشغيل عشوائي</string>
+    <string name="playlist">القائمة</string>
+    <string name="lyrics">كلمات الاغنية</string>
+    <string name="search">بحث</string>
+    <string name="all_subjects_txt">All Courses</string>
+    <string name="start_course_txt">Start Course</string>
+    <string name="lecture_txt">Lectures</string>
+    <string name="no_data">No Data</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="no_videos">No videos</string>
+
+</resources>

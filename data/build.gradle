@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+class Config {
+    Properties commonProperties
+    Properties keystoreProperties
+}
+
+
+ext {
+    config = new Config()
+    def basePath = rootDir.absolutePath + "/config/"
+
+    config.commonProperties = new Properties()
+    def commonPropertiesFileName = "common.properties"
+    config.
+            commonProperties.
+            load(new FileInputStream(rootProject.file((basePath + commonPropertiesFileName))))
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "BASE_URL", "\"${config.commonProperties.develop_base_url}\""
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            buildConfigField "String", "BASE_URL", "\"${config.commonProperties.release_base_url}\""
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(path: ':domain')
+
+    implementation deps.rx.android
+    implementation deps.rx.kotlin
+    implementation deps.rx.java
+
+    implementation deps.google_gson
+
+    api deps.retrofit.retrofit
+    api deps.retrofit.adapters
+    api deps.retrofit.gson
+
+    implementation deps.okHttp.okHttp
+    implementation deps.okHttp.logging
+    implementation(deps.okHttp.prettyLogger) {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    implementation deps.dagger.dagger
+    implementation deps.dagger.android
+    implementation deps.dagger.support
+    kapt deps.dagger.compiler
+    kapt deps.dagger.processor
+
+    implementation deps.timber
+
+    testImplementation deps.mockito.core
+    testImplementation deps.mockito.inline
+    testImplementation deps.mockito.kotlin
+    testImplementation deps.lifecycle.testing
+
+    androidTestImplementation(deps.runner) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    testImplementation deps.androidxJunit
+    androidTestImplementation deps.androidxJunit
+    testImplementation deps.mockwebserver
+
+}

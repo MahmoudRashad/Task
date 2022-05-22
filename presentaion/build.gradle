@@ -1,0 +1,110 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs'
+//    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.rashad.app"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    implementation project(path: ':data')
+    implementation project(path: ':domain')
+
+    implementation deps.kotlin.lib
+    implementation deps.kotlin.reflect
+
+    implementation deps.lifecycle.viewModel
+    implementation deps.lifecycle.liveData
+    implementation deps.lifecycle.compiler
+    implementation deps.lifecycle.streams
+    implementation deps.lifecycle.process
+    implementation deps.lifecycle.testing
+
+    implementation deps.dagger.dagger
+    implementation deps.dagger.android
+    implementation deps.dagger.support
+    implementation deps.security.securityCrypto
+    kapt deps.dagger.compiler
+    kapt deps.dagger.processor
+
+    implementation deps.rx.android
+    implementation deps.rx.kotlin
+    implementation deps.rx.java
+
+    implementation deps.navigation.navigationFragment
+    implementation deps.navigation.navigationUi
+
+    implementation deps.timber
+    implementation deps.toast
+
+    implementation deps.support.core_ktx
+    implementation deps.support.appcompat
+    implementation deps.support.constraint
+    implementation deps.support.recyclerView
+    implementation deps.support.materialDesign
+    implementation deps.support.multidex
+    implementation deps.support.testRules
+    implementation deps.support.fragment
+    implementation deps.support.activity
+    implementation deps.support.legacy
+
+    implementation deps.circleImage
+
+    implementation deps.ImageSlideshow
+
+    implementation deps.roundedImageview
+
+    implementation deps.shapeofview
+
+
+    implementation deps.progressview
+
+    implementation deps.glide.glide
+    implementation deps.glide.compiler
+    implementation deps.glide.glide_okhttp
+
+    api deps.okHttp.okHttp
+    api deps.okHttp.logging
+    implementation(deps.okHttp.prettyLogger) {
+        exclude group: 'org.json', module: 'json'
+    }
+}

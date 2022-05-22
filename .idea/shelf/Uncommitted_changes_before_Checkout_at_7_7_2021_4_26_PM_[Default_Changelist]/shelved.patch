@@ -1,0 +1,23 @@
+Index: presentaion/src/main/java/com/madrasty/app/authorization/login/viewmodels/LoginViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.madrasty.app.authorization.login.viewmodels\r\n\r\nimport com.madrasty.app.base.BaseViewModel\r\nimport javax.inject.Inject\r\n\r\nclass LoginViewModel @Inject constructor() : BaseViewModel() {\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- presentaion/src/main/java/com/madrasty/app/authorization/login/viewmodels/LoginViewModel.kt	(revision 397c65042ab29e381aa00b9df34edb5197ea5215)
++++ presentaion/src/main/java/com/madrasty/app/authorization/login/viewmodels/LoginViewModel.kt	(date 1625664153255)
+@@ -1,8 +1,11 @@
+ package com.madrasty.app.authorization.login.viewmodels
+ 
+ import com.madrasty.app.base.BaseViewModel
++import com.madrasty.domain.authentication.login.use_cases.LoginUseCase
+ import javax.inject.Inject
+ 
+-class LoginViewModel @Inject constructor() : BaseViewModel() {
++class LoginViewModel @Inject constructor(
++    private val loginUseCase: LoginUseCase
++    ) : BaseViewModel() {
+ 
+ }
+\ No newline at end of file

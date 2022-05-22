@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name" translatable="false">Madrasty</string>
+    <!--    splash -->
+    <string name="welcome">WELCOME</string>
+    <string name="img_desc">image</string>
+    <!--    login-->
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="email">email</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="password">Password</string>
+    <string name="get_started">Get Started</string>
+    <string name="take_a_tour">Take a tour</string>
+    <string name="press_to_login_with">Press to login with</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="join">Join</string>
+    <!--    forgot password-->
+    <string name="forgot_your_password_txt">Forgot your password?</string>
+    <string name="enter_mobile_number_msg">Enter e-mail address to receive your verification code</string>
+    <string name="mobile_number_txt">mobile number</string>
+    <string name="reset_password_txt">Reset Password</string>
+    <string name="empty_mobile_number">Please insert your mobile number</string>
+    <string name="invalid_email">Please enter a valid Email</string>
+    <string name="required">Required</string>
+    <string name="invalid_password">password should contain at least 8 characters</string>
+    <string name="verification_code_txt">Verification Code</string>
+    <string name="email_not_found">Email not found</string>
+    <string name="ok">OK</string>
+    <string name="server_error">"Server Error Try Again Later "</string>
+    <string name="connection_error">"Connection Error "</string>
+
+    <!--    sign up-->
+    <string name="register_as_student">Register as Student</string>
+    <string name="register_as_instructor">Register as Instructor</string>
+    <string name="user_name">User Name</string>
+    <string name="grade">Grade</string>
+    <string name="code_txt">Code</string>
+    <string name="verify_txt">Verify</string>
+    <string name="resend_code_txt">Resend Code</string>
+    <string name="empty_verification_code">Please insert verification code number</string>
+    <string name="confirm_txt">Submit</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_new_password">Retype New Password</string>
+    <string name="empty_password">Please insert password</string>
+    <string name="seconds">seconds</string>
+    <string name="resend_in">resend in</string>
+    <string name="success_txt">Success</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="accept_terms_and_condetions">"Please Accept the Terms And Condetions "</string>
+    <string name="terms_and_condetions">"I have read and agree to the <a href='id.web.freelancer.example.TCActivity://Kode\'>TERMS AND CONDITIONS</a> and <a href='id.web.freelancer.example.TCActivity://Kode'>Privacy Policy</a>"</string>
+    <string name="quiz">Quiz</string>
+    <string name="live_session">Live Session</string>
+    <string name="my_learning">My learning</string>
+    <string name="music">Music</string>
+    <string name="new_music">New Music</string>
+    <string name="mr">Mr  </string>
+    <string name="mr_name">Mr : %1$2s </string>
+    <string name="shuffle_play">Shuffle Play</string>
+    <string name="my_points_and_badges">My Points and badges</string>
+    <string name="points">%1$2s / %1$2s Points</string>
+    <string name="until_you_advance_to_the_next_level">Until you advance to the next level!!</string>
+    <string name="my_live_sessions">My Live Sessions</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="playlist">Playlist</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="search">Search</string>
+    <string name="all_subjects_txt">All Courses</string>
+    <string name="start_course_txt">Start Course</string>
+    <string name="lecture_txt">Lectures</string>
+    <string name="no_data">No Data</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="no_videos">No videos</string>
+</resources>
